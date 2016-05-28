@@ -1,0 +1,10 @@
+Inyección SQL es un método de infiltración de código intruso que se vale de una 
+vulnerabilidad informática
+presente en una aplicación en el nivel de validación de las 
+entradas para realizar operaciones sobre una base de datos.
+La inyección de código SQL es un ataque en el cual se inserta código malicioso en las cadenas que posteriormente
+se pasan a una instancia de SQL Server para su análisis y ejecución. 
+Todos los procedimientos que generan instrucciones SQL deben revisarse en busca de vulnerabilidades de inyección de código,
+ya que SQL Server ejecutará todas las consultas recibidas que sean válidas desde el punto de vista sintáctico.
+El proceso de inyección consiste en finalizar prematuramente una cadena de texto y anexar un nuevo comando. Como el comando insertado puede contener cadenas adicionales que se hayan anexado al mismo antes de su ejecución, el atacante pone fin a la cadena inyectada con una marca de comentario "--".
+El texto situado a continuación se omite en tiempo de ejecución.
